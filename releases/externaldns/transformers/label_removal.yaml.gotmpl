@@ -1,0 +1,10 @@
+---
+apiVersion: builtin
+kind: PatchTransformer
+metadata:
+  name: "remove-deploy-label"
+target:
+  labelSelector: "foooo-never-matched"
+patch: |-
+  - op: remove
+    path: "/spec/template/metadata/labels/fooo"

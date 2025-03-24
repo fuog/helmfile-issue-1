@@ -1,0 +1,17 @@
+---
+repositories:
+  - name: externaldns
+    url: https://kubernetes-sigs.github.io/external-dns/
+
+releases:
+
+  # Upstream helmchart
+  - name: "foooooo"
+    namespace: "system-externaldns"
+    chart: externaldns/external-dns
+    version: 1.16.0
+    skipSchemaValidation: true
+    transformers:
+      - releases/externaldns/transformers/label_removal.yaml.gotmpl
+    values:
+      - releases/externaldns/externaldns.yaml.gotmpl
