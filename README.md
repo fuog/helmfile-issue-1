@@ -1,6 +1,6 @@
 # helmfile-issue-1
 
-This is a DEMO repo that showcases an helmfile rendering issue regarding `skipSchemaValidation: true` with `transformers: ...` on helmfile version `1.0.0-rc.12`
+This is a DEMO repo that showcases an helmfile rendering issue [#1971](https://github.com/helmfile/helmfile/issues/1971) regarding `skipSchemaValidation: true` with `transformers: ...` on helmfile version `1.0.0-rc.12`
 
 ## Link to helmfile Issue
 
